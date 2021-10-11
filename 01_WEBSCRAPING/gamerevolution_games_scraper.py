@@ -66,7 +66,7 @@ def load_data() -> None:
 
 if __name__ == '__main__':
     
-    scraper_title = "GAMEREVOLUTION GAMES SCRAPER"
+    scraper_title = "GAMEREVOLUTION GAMES COLLECTOR"
     ascii_art_title = pyfiglet.figlet_format(scraper_title, font='small')
     
     print('\n\n')
@@ -75,10 +75,14 @@ if __name__ == '__main__':
     
     total_gamelist_urls = len(GAMELIST_URLS)
     
+    start_time = time.perf_counter()
+    
     asyncio.run(main())
     
-    scraping_time = time.perf_counter()
-
+    end_time = time.perf_counter()
+    
+    scraping_time = start_time - end_time
+    
     print('\n')
     print('All Games Collected...')
     print(f'Time spent on scraping: {scraping_time} seconds')
