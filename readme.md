@@ -5,9 +5,9 @@
 <h4 align="center">Scraping & Analyzing games from <a href="https://www.gamerevolution.com/games/" target="_blank">GameRevolution</a> website with <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank">Python</a> and <a href="https://en.wikipedia.org/wiki/Microsoft_Power_BI" target="_blank">Power BI</a></h4>
 
 <p align='center'>
-<img src='06_RESOURCES/built-with-love.svg'>
-<img src='06_RESOURCES/powered-by-coffee.svg'>
-<img src='06_RESOURCES/cc-nc-sa.svg'>
+<img src="https://i.ibb.co/KxfMMsP/built-with-love.png" alt="built-with-love" border="0">
+<img src="https://i.ibb.co/MBDK1Pk/powered-by-coffee.png" alt="powered-by-coffee" border="0">
+<img src="https://i.ibb.co/CtGqhQH/cc-nc-sa.png" alt="cc-nc-sa" border="0">
 </p>
 
 <p align="center">
@@ -25,10 +25,13 @@ This project focuses on scraping games and their associated metrics from [GameRe
 
 The repository directory structure is as follows:
 
-├───Analyzing-GameRevolution-Games<br>
-│ ├───01_WEBSCRAPING<br>
-│ ├───02_ETL<br>
-│ └───06_RESOURCES<br>
+Analyzing-GameRevolution-Games<br>
+├─ 01_WEBSCRAPING<br>
+├─ 02_ETL<br>
+├─ 03_DATA<br>
+├─ 04_ANALYSIS<br>
+├─ 05_DASHBOARD<br>
+├─ 06_RESOURCES<br>
 
 The type of content present in the directories is as follows:
 
@@ -61,7 +64,7 @@ This directory contains images, icons, layouts, etc. that are used in this proje
 The major skills that are required as prerequisite to fully understand this project are as follows:
 
 - Basics of Python
-- Python libraries: Requests-HTML, Pandas, Time, Asycio
+- Python libraries: Requests-HTML, Pandas, Time, Concurrent Futures
 - Basics of Python Notebooks
 - Basics of Power BI
 
@@ -102,13 +105,13 @@ If you have any doubts, queries or, suggestions then, please connect with me in 
 If you like my work then, you may support me at Patreon:
 
 <a href="https://www.patreon.com/quantumudit" target="_blank">
-<img src="06_RESOURCES/become_a_patreon.png" alt="git" width="170" height="50"/>
+<img src="https://i.ibb.co/94bkJwp/become-a-patreon.png" alt="become-a-patreon" border="0" width="170" height="50">
 </a>
 
 ## License
 
 <a href = 'https://creativecommons.org/licenses/by-nc-sa/4.0/' target="_blank">
-    <img src='06_RESOURCES/by-nc-sa.png' width=88 height=31>
+    <img src="https://i.ibb.co/mvmWGkm/by-nc-sa.png" alt="by-nc-sa" border="0" width="88" height="31">
 </a>
 
 This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format for noncommercial purposes only, and only so long as attribution is given to the creator. If you remix, adapt, or build upon the material, you must license the modified material under identical terms.
