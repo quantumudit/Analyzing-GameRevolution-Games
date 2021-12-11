@@ -30,7 +30,6 @@ def generate_page_links(gamelist_url: str) -> None:
         This function appends the page links to 'all_page_links' list
     """
     
-    print('\n')
     print(f'Collecting page links from: {gamelist_url}')
     
     response = SESSION.get(gamelist_url)
@@ -53,13 +52,12 @@ def scrape_content(page_url: str) -> None:
         It returns nothing but, adds the scraped data to the list
     """
     
+    print(f'Scraping details from: {page_url}')
+    
     utc_timezone = timezone.utc
     current_utc_timestamp = datetime.now(utc_timezone).strftime('%d-%b-%Y %H:%M:%S')
     
     response = SESSION.get(page_url)
-    
-    print('\n')
-    print(f'Scraping details from: {page_url}')
     
     gamelist_type = response.html.find('div.list-search ~ h3.title', first=True).text.title()
     games_content = response.html.find('div.list-games ul:nth-child(2) >li')
